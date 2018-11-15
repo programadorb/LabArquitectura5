@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tablero Compartido</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="main()">
+        <div style="text-align: center" class="col-lg-8 col-lg-offset-2">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            Tablero Compartido<br/>
+                            <canvas id="tablero" width="800" height="480" style="background-color:whitesmoke" ></canvas>
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Color:                             
+                            <select onclick="set_color();" name="color" id="colores">
+                                <option value="red">Rojo</option>
+                                <option value="green">Verde</option>
+                                <option value="blue">Azul</option>
+                            </select>
+                            Tamaño: 
+                            <select onclick="set_tamano();" name="tamaño" id="tamano">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <input onclick="guardar();" value="Guardar" type="button" class="btn btn-success"/>
+                            <input onclick="limpiar();" value="Limpiar" type="button" class="btn btn-success"/>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <a id="save"></a>
+        <div id="salida"></div>
+        <script language="javascript" type="text/javascript" src="WebSocketJS.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style type="text/css">
+            body{
+                background-image: url("https://www.diplareios.edu.gr/wp-content/uploads/2018/06/blackboard.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                color:yellow !important;
+                padding-top:5%;
+            }
+
+            body select{
+                color:black !important;
+            }
+        </style>
+    </body>
+</html>
