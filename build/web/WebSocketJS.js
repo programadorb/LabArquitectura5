@@ -100,13 +100,10 @@ function OnError(evt){
 }
 
 function guardar() {
-  // Genera una imagen con el contenido del canvas
   var dataUrl = canvas.toDataURL('image/jpeg');  
-  // Nombre de la imagen
   save.download = "tablero.jpeg";
   save.href = dataUrl;
   save.click();
-  // Simular click en el elemento
 }
 
 function writeToSreen(message){
