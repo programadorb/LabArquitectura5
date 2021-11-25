@@ -1,14 +1,8 @@
-## Laboratorio Arquitectura 5
-
-
+## Laboratorio 1 Comunicaciones 2
 
 ## Integrantes
-Alejandro Villegas Lopez.<br />
 Daniel Molina Yepes.<br />
-Johan Estiven Ospina Hincapié .<br />
-Johan Camilo Suárez Lopera .<br />
-Juan Pablo Rios Arenas .<br />
-Juan Diego Isaza Londoño .<br />
+JORGE ELÍAS DÍAZ VELÁSQUEZ .<br />
 
 ## Descripción
 Aplicación JEE con websockets
